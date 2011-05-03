@@ -1,4 +1,6 @@
-<%= link_to_function "Test for JS support", '$(this).html("JS works")' %>
+<h1>Task List</h1>       
+
+<p>Simple project to explore Request Spec, Capybara, testing Javascript, Launchy and database_cleaner.</p>
 
 <div id="My_Task">
 <%= form_for @task do |f| %>  
@@ -12,6 +14,9 @@
 	<% @tasks.each do |task|%>
 	<li><%= task.name %> </li>             
 	<% end %>
-</ul>
+</ul>      
+
+
+<%= link_to_function "Test for JS support", '$(this).html("JS works")' %> 
 
 
