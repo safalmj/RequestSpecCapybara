@@ -1,0 +1,17 @@
+<%= link_to_function "Test for JS support", '$(this).html("JS works")' %>
+
+<div id="My_Task">
+<%= form_for @task do |f| %>  
+	<%= f.label :name, "Task Name: " %>
+	<%= f.text_field :name %>
+	<%= f.submit "Add" %>
+	<% end %>
+</div>
+
+<ul>        
+	<% @tasks.each do |task|%>
+	<li><%= task.name %> </li>             
+	<% end %>
+</ul>
+
+
